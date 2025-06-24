@@ -1,0 +1,11 @@
+# No external dependencies required
+# Python 3.7+ standard library only
+
+# The game uses only built-in Python modules:
+# - json (for world data and save files)
+# - os (for file operations)
+# - pickle (for save functionality)
+# - random (for encounters and events)
+# - typing (for type hints)
+# - dataclasses (for data structures)
+# - enum (for game states)

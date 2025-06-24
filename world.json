@@ -1,0 +1,118 @@
+{
+  "rooms": {
+    "entrance": {
+      "name": "Mysterious Entrance",
+      "description": "You stand before an ancient stone archway covered in glowing runes. The air hums with magical energy. Paths lead north into a dark forest and east toward distant mountains.",
+      "exits": {
+        "north": "forest",
+        "east": "mountains"
+      },
+      "items": ["lantern"],
+      "visited": false,
+      "dark": false
+    },
+    "forest": {
+      "name": "Enchanted Forest",
+      "description": "Towering trees with silver bark stretch endlessly upward. Bioluminescent fungi cast an eerie blue glow. You hear whispers in the wind.",
+      "exits": {
+        "south": "entrance",
+        "west": "clearing"
+      },
+      "items": ["mushroom"],
+      "visited": false,
+      "dark": true
+    },
+    "clearing": {
+      "name": "Sacred Clearing",
+      "description": "A circular clearing where moonlight streams through the canopy. Ancient stone circles mark this as a place of power.",
+      "exits": {
+        "east": "forest"
+      },
+      "items": ["crystal"],
+      "visited": false,
+      "dark": false
+    },
+    "mountains": {
+      "name": "Misty Mountains",
+      "description": "Jagged peaks pierce the clouds. A narrow path winds upward, while a cave entrance yawns darkly to the north.",
+      "exits": {
+        "west": "entrance",
+        "north": "cave",
+        "up": "peak"
+      },
+      "items": ["rope"],
+      "visited": false,
+      "dark": false
+    },
+    "cave": {
+      "name": "Crystal Cave",
+      "description": "The cave walls sparkle with embedded crystals that pulse with inner light. Deep shadows dance in the corners.",
+      "exits": {
+        "south": "mountains"
+      },
+      "items": ["treasure"],
+      "visited": false,
+      "dark": true
+    },
+    "peak": {
+      "name": "Mountain Peak",
+      "description": "You've reached the summit! The world spreads out below you in breathtaking panorama. An ancient altar stands here.",
+      "exits": {
+        "down": "mountains"
+      },
+      "items": ["scroll"],
+      "visited": false,
+      "dark": false
+    }
+  },
+  "items": {
+    "lantern": {
+      "name": "Glowing Lantern",
+      "description": "A brass lantern that glows with eternal flame. It illuminates dark places.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "The lantern's light banishes the darkness around you.",
+      "aliases": ["lamp", "light"]
+    },
+    "mushroom": {
+      "name": "Glowing Mushroom",
+      "description": "A bioluminescent mushroom that pulses with soft blue light. It might be useful.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["fungi", "shroom"]
+    },
+    "crystal": {
+      "name": "Power Crystal",
+      "description": "A perfectly clear crystal that seems to contain swirling energy. It feels warm to the touch.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["gem", "stone"]
+    },
+    "rope": {
+      "name": "Climbing Rope",
+      "description": "A sturdy rope that could help you reach high places or escape dangerous situations.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["cord"]
+    },
+    "treasure": {
+      "name": "Ancient Treasure",
+      "description": "A chest filled with gold coins and precious gems. This is what adventurers dream of!",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["chest", "gold", "coins"]
+    },
+    "scroll": {
+      "name": "Wisdom Scroll",
+      "description": "An ancient scroll covered in mystical symbols. Reading it fills you with knowledge.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "The scroll's wisdom flows into your mind, increasing your understanding of this world.",
+      "aliases": ["parchment", "manuscript"]
+    }
+  }
+}

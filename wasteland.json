@@ -1,0 +1,357 @@
+{
+  "locations": {
+    "dc_ruins": {
+      "name": "Washington DC Ruins",
+      "description": "The skeletal remains of the Capitol dome pierce the smoky sky. Your dual-sport motorcycle idles among the rubble-strewn streets. The Potomac River glows with an unnatural green hue to the south. Interstate 66 stretches west toward the wasteland.",
+      "exits": {
+        "west": "highway_66",
+        "south": "potomac_bridge"
+      },
+      "items": ["gas_can"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 2
+    },
+    "highway_66": {
+      "name": "Interstate 66 Wasteland",
+      "description": "Cracked asphalt stretches endlessly west. Abandoned vehicles rust in the median, their metal skeletons picked clean by scavengers. Your bike's engine echoes across the desolate landscape. A side road leads north to an old truck stop.",
+      "exits": {
+        "east": "dc_ruins",
+        "west": "shenandoah",
+        "north": "truck_stop"
+      },
+      "items": ["spare_tire"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 3
+    },
+    "truck_stop": {
+      "name": "Abandoned Truck Stop",
+      "description": "Rusted fuel pumps stand like metal tombstones. The convenience store's windows are shattered, but the structure might still hold supplies. A faded sign reads 'Last Gas for 50 Miles' - if only that were still true.",
+      "exits": {
+        "south": "highway_66"
+      },
+      "items": ["fuel_siphon", "canned_food", "road_map"],
+      "visited": false,
+      "dangerous": true,
+      "fuel_cost": 1
+    },
+    "potomac_bridge": {
+      "name": "Potomac River Bridge",
+      "description": "The bridge spans the irradiated waters below. Geiger counter clicks echo in your helmet. The metal structure groans ominously in the radioactive wind. Best not to linger here long.",
+      "exits": {
+        "north": "dc_ruins",
+        "west": "virginia_hills"
+      },
+      "items": ["rad_pills"],
+      "visited": false,
+      "dangerous": true,
+      "fuel_cost": 2
+    },
+    "shenandoah": {
+      "name": "Shenandoah Wasteland",
+      "description": "What once were the beautiful Blue Ridge Mountains are now twisted, blackened peaks. Your dual-sport handles the rough terrain well. A hidden valley to the south might offer shelter.",
+      "exits": {
+        "east": "highway_66",
+        "south": "hidden_valley",
+        "west": "appalachian_pass"
+      },
+      "items": ["mountain_gear"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 4
+    },
+    "hidden_valley": {
+      "name": "Hidden Valley Settlement",
+      "description": "Smoke rises from chimneys built into hillsides. Survivors have carved out a life here, trading supplies and information. Your motorcycle draws curious but wary glances.",
+      "exits": {
+        "north": "shenandoah"
+      },
+      "items": ["trade_goods", "fuel_barrel", "repair_kit"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 1
+    },
+    "virginia_hills": {
+      "name": "Virginia Hills",
+      "description": "Rolling hills stretch toward the horizon, dotted with the remains of small towns. Your bike climbs steadily westward. The air tastes of ash and distant storms.",
+      "exits": {
+        "east": "potomac_bridge",
+        "west": "appalachian_pass"
+      },
+      "items": ["binoculars"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 3
+    },
+    "appalachian_pass": {
+      "name": "Appalachian Mountain Pass",
+      "description": "The highest point for hundreds of miles. From here you can see the long road ahead - thousands of miles of wasteland between you and Los Angeles. Your bike's engine strains against the altitude.",
+      "exits": {
+        "east": "shenandoah",
+        "south": "virginia_hills",
+        "west": "kentucky_border"
+      },
+      "items": ["high_octane_fuel"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 5
+    },
+    "kentucky_border": {
+      "name": "Kentucky Border Crossing",
+      "description": "A checkpoint from the old world, now manned by raiders who demand tribute from travelers. Your bike could probably outrun them, but negotiation might be wiser.",
+      "exits": {
+        "east": "appalachian_pass",
+        "west": "louisville_ruins"
+      },
+      "items": ["ammunition"],
+      "visited": false,
+      "dangerous": true,
+      "fuel_cost": 2
+    },
+    "louisville_ruins": {
+      "name": "Louisville Ruins",
+      "description": "The Ohio River flows past the skeletal remains of the city. This is just the beginning of your journey - Los Angeles is still over 2000 miles west. But you've proven you can survive the wasteland.",
+      "exits": {
+        "east": "kentucky_border",
+        "west": "missouri_plains"
+      },
+      "items": ["victory_flag"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 1
+    },
+    "missouri_plains": {
+      "name": "Missouri Plains",
+      "description": "Endless grasslands stretch to the horizon, broken only by the occasional rusted farmhouse. The Great Plains await beyond - a thousand miles of open road to the Rockies.",
+      "exits": {
+        "east": "louisville_ruins",
+        "west": "los_angeles"
+      },
+      "items": ["compass"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 10
+    },
+    "los_angeles": {
+      "name": "Los Angeles - City of Angels",
+      "description": "Against all odds, you've made it! The Pacific Ocean sparkles in the distance. Palm trees sway in the radioactive breeze. You are a true wasteland legend - one of the few to cross the continent and live to tell the tale.",
+      "exits": {},
+      "items": ["golden_wrench"],
+      "visited": false,
+      "dangerous": false,
+      "fuel_cost": 0
+    }
+  },
+  "items": {
+    "toolkit": {
+      "name": "Motorcycle Toolkit",
+      "description": "A well-worn set of tools for maintaining your dual-sport bike. Essential for survival in the wasteland.",
+      "takeable": false,
+      "useable": true,
+      "use_message": "You perform basic maintenance on your bike, improving its condition.",
+      "aliases": ["tools", "wrench", "kit"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 15
+    },
+    "water_bottle": {
+      "name": "Water Bottle",
+      "description": "A metal water bottle, dented but functional. Clean water is precious in the wasteland.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You drink deeply, feeling refreshed and ready to continue.",
+      "aliases": ["water", "bottle", "drink"],
+      "fuel_value": 0,
+      "food_value": 10,
+      "repair_value": 0
+    },
+    "jerky": {
+      "name": "Beef Jerky",
+      "description": "Dried meat that's seen better days, but it's protein and it's yours.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "The salty meat gives you energy for the road ahead.",
+      "aliases": ["meat", "food", "beef"],
+      "fuel_value": 0,
+      "food_value": 15,
+      "repair_value": 0
+    },
+    "gas_can": {
+      "name": "Jerry Can",
+      "description": "A red metal gas can, about half full. Fuel is life in the wasteland.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You pour the precious fuel into your bike's tank.",
+      "aliases": ["fuel", "gas", "gasoline", "petrol"],
+      "fuel_value": 25,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "spare_tire": {
+      "name": "Motorcycle Tire",
+      "description": "A knobby dual-sport tire, perfect for your bike. Still has good tread.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You replace a worn tire, improving your bike's handling.",
+      "aliases": ["tire", "wheel", "rubber"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 20
+    },
+    "fuel_siphon": {
+      "name": "Fuel Siphon Hose",
+      "description": "A length of rubber hose for extracting fuel from abandoned vehicles.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You siphon fuel from a nearby wreck, adding to your reserves.",
+      "aliases": ["siphon", "hose", "tube"],
+      "fuel_value": 15,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "canned_food": {
+      "name": "Canned Beans",
+      "description": "A dented can of beans. The label is faded but it's still sealed.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You eat the beans cold. Not gourmet, but filling.",
+      "aliases": ["beans", "can", "food"],
+      "fuel_value": 0,
+      "food_value": 25,
+      "repair_value": 0
+    },
+    "road_map": {
+      "name": "Pre-War Road Atlas",
+      "description": "A road atlas from before the bombs fell. Some routes may still be passable.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You study the map, planning your route to Los Angeles.",
+      "aliases": ["map", "atlas", "directions"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "rad_pills": {
+      "name": "Rad-Away Pills",
+      "description": "Anti-radiation medication. Essential for traveling through hot zones.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You take a pill, feeling the radiation sickness subside.",
+      "aliases": ["pills", "medicine", "radaway"],
+      "fuel_value": 0,
+      "food_value": 5,
+      "repair_value": 0
+    },
+    "mountain_gear": {
+      "name": "Climbing Gear",
+      "description": "Ropes, pitons, and carabiners. Useful for navigating treacherous terrain.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["rope", "climbing", "gear"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "trade_goods": {
+      "name": "Trade Supplies",
+      "description": "Miscellaneous items valuable for bartering with other survivors.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["supplies", "barter", "goods"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "fuel_barrel": {
+      "name": "Fuel Barrel",
+      "description": "A large barrel of high-quality gasoline. This could get you far.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You fill your tank and spare containers with premium fuel.",
+      "aliases": ["barrel", "drum", "gasoline"],
+      "fuel_value": 50,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "repair_kit": {
+      "name": "Advanced Repair Kit",
+      "description": "Professional-grade tools and parts for major motorcycle repairs.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You perform extensive repairs, bringing your bike back to peak condition.",
+      "aliases": ["parts", "kit", "repairs"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 40
+    },
+    "binoculars": {
+      "name": "Military Binoculars",
+      "description": "High-quality optics for scouting the road ahead and spotting danger.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You scan the horizon, noting safe routes and potential hazards.",
+      "aliases": ["scope", "optics", "glasses"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "high_octane_fuel": {
+      "name": "High-Octane Racing Fuel",
+      "description": "Premium racing fuel that will make your bike purr like a mountain cat.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "Your bike's engine roars with newfound power from the premium fuel.",
+      "aliases": ["racing", "premium", "octane"],
+      "fuel_value": 35,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "ammunition": {
+      "name": "Ammunition Box",
+      "description": "A box of mixed ammunition. Useful for trading or protection.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["ammo", "bullets", "rounds"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "victory_flag": {
+      "name": "California Republic Flag",
+      "description": "A tattered flag from the old California Republic. A symbol of hope and your destination.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["flag", "banner", "california"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "compass": {
+      "name": "Military Compass",
+      "description": "A precision compass that still points true north, despite the electromagnetic chaos of the wasteland.",
+      "takeable": true,
+      "useable": true,
+      "use_message": "You check your bearing - Los Angeles lies due west across the endless plains.",
+      "aliases": ["navigation", "direction"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    },
+    "golden_wrench": {
+      "name": "Golden Wrench",
+      "description": "A ceremonial golden wrench, symbol of the master mechanics who once kept the world's machines running. You've earned this.",
+      "takeable": true,
+      "useable": false,
+      "use_message": "",
+      "aliases": ["wrench", "trophy", "gold"],
+      "fuel_value": 0,
+      "food_value": 0,
+      "repair_value": 0
+    }
+  }
+}
