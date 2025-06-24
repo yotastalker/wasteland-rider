@@ -15,7 +15,7 @@ Wasteland Rider is a gritty survival text adventure where you play as a lone mot
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/chrismckearn/wasteland-rider.git
+git clone https://github.com/yotastalker/wasteland-rider.git
 cd wasteland-rider
 python3 game.py
 ```
