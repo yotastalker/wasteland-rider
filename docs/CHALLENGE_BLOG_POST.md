@@ -210,7 +210,7 @@ The complete game is available on GitHub: [Link to your repository]
 To play:
 ```bash
 git clone [your-repo]
-cd wasteland-rider
+cd wastelandrider
 python3 game.py
 ```
 

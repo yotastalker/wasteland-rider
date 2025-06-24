@@ -7,7 +7,7 @@ Your local git repository is ready! Here's how to create the GitHub repository a
 1. **Go to GitHub**: Visit [github.com](https://github.com) and sign in
 2. **Create New Repository**: Click the "+" icon → "New repository"
 3. **Repository Settings**:
-   - **Repository name**: `wasteland-rider`
+   - **Repository name**: `wastelandrider`
    - **Description**: `Post-apocalyptic text adventure built with Amazon Q Developer CLI for #BuildGamesChallenge`
    - **Visibility**: Public ✅
    - **Initialize**: ❌ Don't initialize (we already have files)
@@ -21,7 +21,7 @@ After creating the repository on GitHub, run these commands:
 cd /Users/chrismckearn/zork_modern
 
 # Add the GitHub remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/wasteland-rider.git
+git remote add origin https://github.com/YOUR_USERNAME/wastelandrider.git
 
 # Set the main branch
 git branch -M main
@@ -36,7 +36,7 @@ Once pushed, your repository will include:
 
 ### 📁 **File Structure**:
 ```
-wasteland-rider/
+wastelandrider/
 ├── README.md                 # Professional project documentation
 ├── game.py                   # Main game engine (800+ lines)
 ├── wasteland.json           # World data (locations, items)
@@ -80,7 +80,7 @@ Post-apocalyptic text adventure: 2,500 miles from DC to LA
 🎮 800+ lines of Python, 0 dependencies
 🏆 #BuildGamesChallenge submission
 
-Try it: https://github.com/YOUR_USERNAME/wasteland-rider
+Try it: https://github.com/YOUR_USERNAME/wastelandrider
 
 #AmazonQDevCLI #TextAdventure #PostApocalyptic #GameDev
 ```
