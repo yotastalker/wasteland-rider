@@ -14,13 +14,48 @@ Wasteland Rider is a gritty survival text adventure where you play as a lone mot
 
 ## ⚡ Quick Start
 
+### 🎮 **Want to Play Right Now? (Easy Method)**
+
+**For Non-Technical Users:**
+
+1. **Download the Game Files**
+   - Go to: https://github.com/yotastalker/wastelandrider
+   - Click the green **"Code"** button
+   - Select **"Download ZIP"**
+   - Extract/unzip the downloaded file to your Desktop
+
+2. **Install Python (One-Time Setup)**
+   - **Windows**: Go to https://python.org → Download → Run installer → Check "Add to PATH"
+   - **Mac**: Python might already be installed. Open Terminal and type `python3 --version`
+   - **If Mac needs Python**: Download from https://python.org or install via App Store
+
+3. **Run the Game**
+   - **Windows**: Double-click the `game.py` file, or open Command Prompt in the game folder and type: `python game.py`
+   - **Mac**: Open Terminal, drag the `game.py` file into Terminal, then press Enter
+   - **Alternative**: Right-click `game.py` → "Open with" → Choose Python
+
+### 🛠️ **For Developers (Advanced Method)**
+
 ```bash
 git clone https://github.com/yotastalker/wastelandrider.git
 cd wastelandrider
 python3 game.py
 ```
 
-**No dependencies required - just Python 3.7+!**
+### 🆘 **Troubleshooting**
+
+**"Python not found" error?**
+- Make sure Python is installed from https://python.org
+- On Windows, reinstall Python and check "Add to PATH"
+- On Mac, try `python3 game.py` instead of `python game.py`
+
+**Game won't start?**
+- Make sure you're in the correct folder (should contain `game.py`)
+- Try double-clicking `play.sh` (Mac/Linux) or `game.py` (Windows)
+
+**Need help?**
+- The game includes a built-in `help` command once it starts
+- Type `help` in the game for all available commands
 
 ## 🎯 Game Features
 
